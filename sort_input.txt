@@ -1,0 +1,44 @@
+Ignores leading blanks.
+Check that input file is sorted.
+Like -c, but does not report the first bad line.
+Considers only blanks and alphanumeric characters.
+
+Fold lower case to upper case characters.
+Compares according to general numerical value.
+
+
+Compare human readable numbers (e.g., 2K 1G).
+
+
+Considers only printable characters.
+
+Start a key at POS1 (origin 1), end it at POS2 (default end of line)
+
+Merge only; input files are assumed to be presorted.
+Compares (unknown) < 'JAN' < ... < 'DEC'.
+
+
+Compares according to string numerical value.
+
+
+Uses OUTPUT file instead of standard output.
+Reverses the result of comparisons.
+
+Shuffles, but groups identical keys. See also: shuf
+
+
+Stabilizes sort by disabling last-resort comparison.
+Use size for the maximum size of the memory buffer.
+
+'Tab character' separating fields is x.
+Uses char instead of non-blank to blank transition.
+
+Uses dir for temporaries.
+
+Unique processing to suppress all but one in each set of lines having equal keys.
+
+Natural sort of (version) numbers within text
+
+Like -i, but ignore only tabs and spaces.
+End lines with 0 byte, not newline
+
