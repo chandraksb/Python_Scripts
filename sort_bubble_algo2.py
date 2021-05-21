@@ -1,19 +1,21 @@
-# Python Bubble sort algorithms
+# Python Bubble sort algorithm
 # Takes file as input. First sorts each line within and then each line of the file
-# Removes empty lines
+# 
 
+# Open the input and output files
 FH = open("sort_input.txt", 'r')
 FH_NEW = open("sort_output.txt", 'w')
 
 i=1
-linesDict = {}
-#Read the contents to a Dictionary
+linesDict = {}  #Temp Dictionary 
+
+#Read the contents to a Temp Dictionary
 for line in FH:
 	linesDict[i] = list(line.split())
 	i += 1
 
 def sort_lines_nfiles():
-	v=[]
+	v=[]  #Temp List
 	i=1
 
 	# With-in line bobble sorting
@@ -29,6 +31,7 @@ def sort_lines_nfiles():
 	# Lines bobble sorting
 	tempListVal = list(linesDict.values())
 	#print(f"Dict List is : {tempListVal}")
+	
 	sizeDict = len(tempListVal)
 	for x in range(sizeDict-1):
 		for y in range(0,sizeDict-x-1):
@@ -41,15 +44,11 @@ def sort_lines_nfiles():
 		FH_NEW.write(str(tmpStr1))
 
 	print("New file sort_output.txt file is ready with bubble sorted")
-	FH_NEW.close()
 
+# Close the opened files
+FH_NEW.close()
 FH.close()
 #END of sort_lines_nfiles() function
 
-'''		
-	i = 1
-	for v in linesDict.values():
-		print(f"Line {i}: {v}")
-		i += 1
-'''
+
 sort_lines_nfiles()
